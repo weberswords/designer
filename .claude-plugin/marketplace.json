@@ -1,0 +1,60 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "designer",
+  "description": "A portable UI/UX designer for Claude Code. Foundational craft skills plus a curated set of best-in-class design skills, tuned to honor each project's own vibe instead of homogenizing it.",
+  "owner": {
+    "name": "The Intelligent Hoodlums",
+    "email": "webs@theintelligenthoodlums.com"
+  },
+  "metadata": {
+    "pluginRoot": "./plugins"
+  },
+  "plugins": [
+    {
+      "name": "ih-designer",
+      "source": "ih-designer",
+      "description": "Foundational designer skills: read a project's existing design system and vibe, honor it instead of flattening it, apply solid UX principles, work from a brand kit, and fall back to the Intelligent Hoodlums house system only when a project has no identity of its own.",
+      "version": "0.1.0",
+      "author": {
+        "name": "The Intelligent Hoodlums",
+        "email": "webs@theintelligenthoodlums.com"
+      },
+      "license": "MIT",
+      "category": "design",
+      "tags": ["design", "ux", "ui", "design-system", "brand", "taste"]
+    },
+    {
+      "name": "impeccable",
+      "source": {
+        "source": "git-subdir",
+        "url": "pbakaus/impeccable",
+        "path": "plugin"
+      },
+      "description": "Paul Bakaus' design-fluency skill. One skill with ~23 commands (/impeccable polish, audit, critique, craft, ...) plus curated anti-pattern detection. Ships an agent and a PostToolUse hook that lints UI edits (requires Node).",
+      "category": "design",
+      "tags": ["design", "frontend", "ui", "ux", "anti-patterns"]
+    },
+    {
+      "name": "taste-skill",
+      "source": {
+        "source": "github",
+        "repo": "leonxlnx/taste-skill"
+      },
+      "description": "Leon's anti-slop taste library: brutalist, minimalist, soft, redesign, brandkit, image-to-code and more. Reads the brief and ships interfaces that don't look templated.",
+      "category": "design",
+      "tags": ["design", "taste", "frontend", "landing-page", "aesthetic"]
+    },
+    {
+      "name": "emil-design-skills",
+      "source": {
+        "source": "github",
+        "repo": "emilkowalski/skills"
+      },
+      "strict": false,
+      "description": "Emil Kowalski's design-engineering skills (Vercel/Linear pedigree): emil-design-eng, review-animations, and animation-vocabulary. Sharp taste on motion, easing, and interface detail.",
+      "skills": ["./skills/"],
+      "category": "design",
+      "tags": ["design", "animation", "motion", "design-engineering"]
+    }
+  ]
+}
