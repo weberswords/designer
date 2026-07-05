@@ -1,0 +1,13 @@
+{
+  "name": "ih-designer",
+  "description": "Foundational designer skills: detect a project's existing design system, honor its vibe instead of homogenizing it, build the project its own system when it has none, audit an existing one for consistency, apply UX principles, and work from a brand kit. No house style — every project gets its own, integrated into its repo.",
+  "version": "0.1.0",
+  "author": {
+    "name": "The Intelligent Hoodlums",
+    "email": "webs@theintelligenthoodlums.com"
+  },
+  "homepage": "https://github.com/weberswords/designer",
+  "repository": "https://github.com/weberswords/designer",
+  "license": "MIT",
+  "keywords": ["design", "ux", "ui", "design-system", "brand", "taste", "accessibility"]
+}
