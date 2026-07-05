@@ -16,33 +16,42 @@ This repo is a [Claude Code plugin marketplace](https://code.claude.com/docs/en/
 
 | Plugin | Source | What it gives you |
 |--------|--------|-------------------|
-| **`ih-designer`** | this repo | The foundational designer: detect a project's design system, honor its vibe, apply UX principles, work from a brand kit, and fall back to the house system only when needed. |
+| **`ih-designer`** | this repo | The foundational designer: detect a project's design system, honor its vibe, build the project its own system when it has none, audit an existing one, apply UX principles, and work from a brand kit. No house style — every project gets its own. |
 | **`impeccable`** | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | Broad frontend design fluency — one skill with ~23 commands (`polish`, `audit`, `critique`, `craft`, …) and anti-pattern detection. Ships a Node-based PostToolUse hook that lints UI edits. |
 | **`taste-skill`** | [leonxlnx/taste-skill](https://github.com/leonxlnx/taste-skill) | Anti-slop taste for landing pages, portfolios, and redesigns (brutalist, minimalist, soft, redesign, brandkit, image-to-code, …). |
 | **`emil-design-skills`** | [emilkowalski/skills](https://github.com/emilkowalski/skills) | Design-engineering taste from Vercel/Linear pedigree — motion, easing, animation review, and interface detail. |
 
 ### The `ih-designer` foundational skills
 
-- **`honor-the-vibe`** — the prime directive and entry point. Reads the project, sets the precedence order (the project's own system wins), routes to the right skill, and refuses homogenization. **Start here.**
-- **`detect-design-system`** — inspects a codebase for its existing tokens, theme, component library, type, color, space, and motion, and produces a structured Design Read.
+- **`honor-the-vibe`** — the prime directive and entry point. Reads the project, sets the precedence order (the project's own identity always wins), routes to the right skill, and refuses homogenization. **Start here.**
+- **`detect-design-system`** — inspects a codebase for its existing tokens, theme, component library, type, color, space, and motion, and produces a structured Design Read with a maturity verdict.
+- **`build-design-system`** — when a project has no system (or fragments), facilitates finding its aesthetic (asks questions, recommends directions) and builds its own tokens/type/color/space/conventions **into the target repo**.
+- **`design-audit`** — when a system already exists, checks quality and consistency: consistent corner rounding, on-scale values, real hierarchy, no boxes-in-boxes.
 - **`ux-principles`** — style-agnostic usability, accessibility, and interaction fundamentals (+ a full `ux-principles.md` checklist).
 - **`brand-kit`** — capture, define, and apply a project's brand identity (+ a `brand-kit-template.md`).
-- **`intelligent-hoodlums-design-system`** — the studio's house craft baseline and default tokens, used **only as a fallback** and as quality standards that never override a project's own identity.
+
+> **designer has no baseline design system of its own.** You point it at a project — say a repo called `tide` — and its job is to analyze `tide`, help shape `tide`'s aesthetic, and integrate the result into **`tide`'s repository**. Two projects designer touches should end up looking like themselves, not like each other.
 
 ### How they work together
 
 ```
-honor-the-vibe  ──▶  detect-design-system  ──▶  read the project's vibe & goals
-      │                                             │
-      │            precedence (higher wins):        ▼
-      │   1. project's own design system    ──▶  extend it invisibly
-      │   2. project's brand kit            ──▶  brand-kit
-      │   3. craft references               ──▶  impeccable · taste-skill · emil
-      │   4. universal UX principles         ──▶  ux-principles
-      │   5. house defaults (fallback only) ──▶  intelligent-hoodlums-design-system
+honor-the-vibe ─▶ detect-design-system ─▶ read the project's vibe, goals & maturity
+      │                                              │
+      │   branch on maturity:                        ▼
+      │     Established ─▶ honor it + design-audit (tighten, don't restyle)
+      │     Partial     ─▶ build-design-system (consolidate) + design-audit
+      │     None        ─▶ build-design-system (create the project its own)
+      │
+      │   precedence when deciding (higher wins):
+      │     1. project's own design system      ─▶ extend it invisibly
+      │     2. project's brand kit / assets     ─▶ brand-kit
+      │     3. a system built with the project  ─▶ build-design-system
+      │     4. craft references                 ─▶ impeccable · taste-skill · emil
+      │     5. universal UX principles          ─▶ ux-principles
       ▼
-  commit & ship — real tokens, verified contrast, honest motion
+  commit & ship into the TARGET repo — real tokens, verified contrast, honest motion
 ```
+There is no designer house style in that order. The fallback for a blank project is to build *the project's own* — never to stamp a default.
 
 ---
 
@@ -77,8 +86,12 @@ Once installed, just do design work — the skills activate by description. Or i
 
 - `/ih-designer:honor-the-vibe` to kick off any UI task the right way.
 - `/ih-designer:detect-design-system` when you land in an unfamiliar codebase.
+- `/ih-designer:build-design-system` to help a project establish its own system.
+- `/ih-designer:design-audit` to check an existing system for consistency and quality.
 - `/ih-designer:ux-principles` to review an interface against the fundamentals.
 - `/ih-designer:brand-kit` to capture or apply a project's identity.
+
+A typical run: add your project repo alongside `designer` in a Claude Code session, then let designer detect what's there, read the vibe, and either build the project its own system or audit the one it has — writing everything into your project's repo.
 
 Skills from the other plugins are namespaced under their plugin (e.g. `/impeccable`, and Emil's/Leon's skills under theirs).
 
@@ -86,11 +99,13 @@ Skills from the other plugins are namespaced under their plugin (e.g. `/impeccab
 
 ## Making it yours
 
-`ih-designer` is authored to be edited:
+`ih-designer` is authored to be edited — it encodes *how you work*, not a look to impose:
 
-- Set your real brand in `plugins/ih-designer/skills/intelligent-hoodlums-design-system/design-tokens.md` — the brand color and type families are `TODO` placeholders; neutrals, spacing, radius, and motion are sensible defaults.
-- Tune the philosophy in `philosophy.md`, and the principles in `ux-principles.md`, to match how you actually work.
+- Tune the method and questions in `build-design-system/SKILL.md` and the checks in `design-audit/SKILL.md` to match how you actually run a project.
+- Adjust the fundamentals in `ux-principles/ux-principles.md` and the anti-slop stance in `honor-the-vibe/SKILL.md`.
 - Add your own skills under `plugins/ih-designer/skills/<name>/SKILL.md` and they'll ship with the plugin.
+
+It deliberately ships **no default tokens or house palette** — designer builds each project its own.
 
 ## Credits & licenses
 

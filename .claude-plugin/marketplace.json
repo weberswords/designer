@@ -13,7 +13,7 @@
     {
       "name": "ih-designer",
       "source": "ih-designer",
-      "description": "Foundational designer skills: read a project's existing design system and vibe, honor it instead of flattening it, apply solid UX principles, work from a brand kit, and fall back to the Intelligent Hoodlums house system only when a project has no identity of its own.",
+      "description": "Foundational designer skills: read a project's existing design system and vibe and honor it, build the project its own system when it has none, audit an existing one for consistency, apply solid UX principles, and work from a brand kit. designer imposes no house style — every project gets its own, integrated into its repo.",
       "version": "0.1.0",
       "author": {
         "name": "The Intelligent Hoodlums",

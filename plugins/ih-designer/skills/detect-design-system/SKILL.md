@@ -67,12 +67,13 @@ GAPS:        No empty-state or error-state patterns; toast styling ad hoc
 Add a **maturity verdict**, because it changes strategy:
 - **Established** — cohesive tokens and consistent usage. Preserve rigorously; match, don't invent.
 - **Partial** — some tokens, inconsistent usage, drift. Consolidate toward the strongest existing direction.
-- **None** — inline styles, ad-hoc values, no shared vocabulary. Only here is it appropriate to establish a system (see `brand-kit`, and fall back to `intelligent-hoodlums-design-system`).
+- **None** — inline styles, ad-hoc values, no shared vocabulary. Here it's appropriate to establish the project its own system — use `build-design-system` (and `brand-kit` for identity). Never hand it a generic or reused one.
 
 ## Then hand off
 
 - Feed the Design Read back into `honor-the-vibe` to set the precedence and the plan.
-- If maturity is Established or Partial, **the existing system wins** — your job is to extend it invisibly.
-- If maturity is None, propose a direction anchored to the project's goals and brand — never to your default.
+- **Established** → the existing system wins; extend it invisibly, and use `design-audit` to check it's applied consistently.
+- **Partial** → consolidate toward the strongest existing direction with `build-design-system`, then `design-audit`.
+- **None** → build the project its own with `build-design-system`, anchored to its goals and brand — never to a default.
 
-Never propose a restyle of an Established system unless the user explicitly asked for a redesign. Fitting in is the job.
+Whatever you produce is integrated into the target project's repo, not designer's. Never propose a restyle of an Established system unless the user explicitly asked for a redesign — fitting in is the job.

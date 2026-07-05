@@ -1,6 +1,6 @@
 ---
 name: brand-kit
-description: Capture, define, and apply a project's brand kit — logo, color, typography, voice, imagery, and motion personality — so design work stays on-brand and identity is preserved. Use when a project has brand assets that must be honored, when starting a project that needs a brand foundation defined, or before a redesign (existing brand is starting material, not optional). Produces or reads a brand-kit.md the whole team and toolkit can work from. For a specific project's identity — distinct from the studio house system in intelligent-hoodlums-design-system.
+description: Capture, define, and apply a project's brand kit — logo, color, typography, voice, imagery, and motion personality — so design work stays on-brand and identity is preserved. Use when a project has brand assets that must be honored, when starting a project that needs a brand foundation defined, or before a redesign (existing brand is starting material, not optional). Produces or reads a brand-kit.md the whole team and toolkit can work from, integrated into the target project's repo. designer has no house brand of its own — this captures each project's own identity.
 ---
 
 # Brand Kit
@@ -29,7 +29,7 @@ Most projects already have identity, even if scattered. Your job is to find and 
 Only when the project genuinely has no identity (confirm via `detect-design-system`). Anchor everything to the project's **goal and audience**, never to a default aesthetic.
 
 1. Start from the Design Read: kind, audience, goals, vibe words.
-2. Choose a direction that fits *this* project — reach into `taste-skill` and `impeccable` for taste and craft, and if the user wants the studio's baseline, use `intelligent-hoodlums-design-system`.
+2. Choose a direction that fits *this* project — reach into `taste-skill` and `impeccable` for taste and craft, and pair with `build-design-system` to turn the identity into real tokens in the project's repo.
 3. Define the minimum viable kit: one brand color + neutral ramp, one type pairing, a voice in three words, a motion stance. Ship a coherent little system, not a 40-page guide.
 4. Verify accessibility on the brand palette immediately (contrast on real surfaces) — a beautiful brand color that fails on text is not usable.
 5. Write it to `brand-kit.md` and treat it as living.
