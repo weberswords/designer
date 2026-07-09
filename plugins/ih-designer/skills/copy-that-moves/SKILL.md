@@ -55,22 +55,24 @@ Paul Arden, distilled to what changes a draft:
 - **Seek the reaction, not the praise.** The line that risks a reaction beats the line everyone nods politely at.
 - Given a safe line and a bold line of roughly equal risk, the bold one is almost always the better bet. Boring is the bigger risk, it just does not feel like it.
 
-### 3. The ad-world surprise
+### 3. Play, wit, and the light touch
 
-The old greats did a few concrete things you can steal:
+The campaigns people quote for decades are not the serious ones. They are the funny, clever, human ones. Old Spice's "I'm on a horse" and Kmart's "I just shipped my pants" work because they are silly and confident and refuse to take themselves seriously. That light-heartedness is the thing to steal, tuned to the brand's own temperature. Copy that is afraid to be human reads as afraid, and afraid never persuaded anyone.
 
-- **The unexpected turn.** Set an expectation, then break it. Kmart's "Ship My Pants" works because you brace for a customer complaint and get a pun. Build the setup so the turn has something to snap against.
-- **Confidence and swagger.** Old Spice states the absurd like it is obviously true and never argues for it. Assert with a wink instead of explaining.
-- **The vivid concrete beats the abstract, every time.** "The price of a house" over "six figures." A named, seeable moment over a category.
-- **Give the piece one line to own.** One sentence the reader could repeat to a friend at a bar. Write that line first, then build the rest to set it up and land it.
-- **Rhythm is a tool.** Vary sentence length on purpose. A long, winding sentence that builds and qualifies and turns, and then a short hard one. The short one lands *because* the long one wound you up.
+- **Be willing to be funny.** A true, dry joke is not a threat to the message, it is the part people remember and repeat. The goal is copy that feels like a person wrote it, ideally a person you would want to have a coffee with.
+- **The unexpected turn.** Set an expectation, then break it. "I just shipped my pants" lands because you brace for a complaint about shipping and get a pun instead. Build the setup so the turn has something to snap against.
+- **Confidence, lightly worn.** Old Spice states the absurd like it is obviously true and never argues for it. Assert with a wink; never explain the joke.
+- **The vivid, funny comparison.** "More devoid of life than a 300 year old vampire" says "lifeless" and makes you laugh in the same breath. Reach for the specific, silly image over the flat adjective.
+- **The concrete beats the abstract, always.** "The price of a house" over "six figures." "A very expensive spring cleaning" over "an unnecessary rebuild."
+- **Give the piece one line to own.** One sentence someone could repeat to a friend. Write that line first, then build the rest to set it up and land it.
+- **Rhythm is a tool.** Vary sentence length on purpose. A long, winding sentence that builds and qualifies and turns, and then a short one. The short one lands *because* the long one wound you up.
 - **Dry over dense.** One true, dry, funny observation beats three jokes. Wit is a scalpel, not a confetti cannon.
 
 ### 4. Make it human
 
 - **Talk like a person to a person.** Read it aloud. If you would never say it out loud, it is not done.
-- **Name the villain in plain words.** "The vendor who profits from your yes." "A roadmap built for investors instead of the people using the thing." Vague villains create no heat.
-- **Use the reader's real world.** Their desk, their board, the quote in their inbox, the eight hours their staff spends in the tool. Specificity is intimacy.
+- **Name the everyday friction, and skip the villain.** Not every story needs a bad guy, and for a warm, honest brand a manufactured villain reads as cynical and a little paranoid. StoryBrand's villain step is optional; drop it whenever the honest obstacle is ordinary life. The obstacle is usually mundane: a decision outside the reader's expertise, a quote they can't evaluate, a boring thing quietly broken. Nobody has to be lying for the reader to be stuck. Name that real, everyday friction instead of casting an enemy, and save a genuine antagonist for the rare case where one actually exists.
+- **Use the reader's real world.** Their desk, their board, the quote in their inbox, the eight hours their staff spends in the tool, the meeting where they nodded along to something they didn't follow. Specificity is intimacy.
 
 ## The guardrails (bold is not a license)
 
@@ -98,10 +100,16 @@ Boldness never buys an exception to the brand's rules. It specifically does not 
 
 > The quote is on your desk, and it has six figures in it. Your team says the rebuild is the only way forward, your gut isn't sure, and you can't read the code yourself to know who's right. Before you sign, I find out what the real problem is, and whether that spend would even fix it.
 
-Diagnosis: the payoff verb is hedged ("I find out... whether"). The villain is unnamed. "Six figures" is an abstraction. The rhythm is flat, four even sentences in a row. Nothing surprises. It is organized and it is dead.
+Diagnosis: the payoff verb is hedged ("I find out... whether"), "six figures" is an abstraction, the rhythm is four even sentences in a row, and nothing surprises. Organized and dead.
 
-**After** (drive: loss-avoidance, hooked with curiosity; one line to own; warm and dry, still zero em dashes and complete sentences):
+**A wrong turn** (it found a pulse, but it went looking for a villain):
 
-> Somebody wants the price of a house to rebuild your product. Maybe they're right. Maybe they just like building things with your money, and you can't read the code to tell the difference. I can. I read it myself and tell you whether the rebuild is real or just expensive, before you sign the check.
+> Somebody wants the price of a house to rebuild your product. Maybe they just like building things with your money, and you can't read the code to tell the difference.
 
-What changed, move by move: "the price of a house" is the image. "Maybe they just like building things with your money" is the dry turn and it names the villain (the incentive) in one line. "I can." is a short complete sentence that lands hard because the long sentence before it wound up. "Real or just expensive" is the line to own. "Sign the check" is concrete where "sign" was abstract. Same facts, same honesty, same rules. It just has a pulse now.
+This has life, but it casts the engineer or vendor as a bad actor. For a warm, honest brand that is a mistake: it reads as cynical, and it starts a fight nobody asked for. Boldness reached for an enemy when the real obstacle was just an ordinary hard decision.
+
+**The fix** (playful and human, everyday friction, no villain, still zero em dashes and complete sentences):
+
+> Your lead engineer is explaining why the app needs a six-figure rebuild, and you're nodding along like you follow the part about the database. That's fine, you've got a company to run. But you still have to approve the thing, and "just trust me" is a lot to ask when the quote costs as much as a house. So I read the code for you and tell you which it is: a real rebuild, or a very expensive spring cleaning.
+
+What changed, move by move: "nodding along like you follow the part about the database" is the human, funny, relatable image, and nobody in it is a bad guy. "You've got a company to run" is warm and light. "As much as a house" is the concrete stake. "A real rebuild, or a very expensive spring cleaning" is the line to own, and it is a joke instead of an accusation. Same facts, same honesty, same rules, now with a pulse and a smile.
