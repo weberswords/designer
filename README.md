@@ -29,6 +29,7 @@ This repo is a [Claude Code plugin marketplace](https://code.claude.com/docs/en/
 - **`design-audit`** — when a system already exists, checks quality and consistency: consistent corner rounding, on-scale values, real hierarchy, no boxes-in-boxes.
 - **`ux-principles`** — style-agnostic usability, accessibility, and interaction fundamentals (+ a full `ux-principles.md` checklist).
 - **`brand-kit`** — capture, define, and apply a project's brand identity (+ a `brand-kit-template.md`).
+- **`copy-that-moves`** — punch up flat, sterile, tech-bro, or "AI-sounding" copy into writing with a pulse, using Octalysis core drives, Paul Arden's nerve, and the surprise of classic advertising — all inside the project's own brand voice, never a house style.
 
 > **designer has no baseline design system of its own.** You point it at a project — say a repo called `tide` — and its job is to analyze `tide`, help shape `tide`'s aesthetic, and integrate the result into **`tide`'s repository**. Two projects designer touches should end up looking like themselves, not like each other.
 
