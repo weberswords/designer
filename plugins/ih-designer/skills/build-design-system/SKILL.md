@@ -52,6 +52,7 @@ Keep it a coherent small system, not a 40-page guide. Ship tokens + a few primit
 
 ## Where the other skills fit
 - `brand-kit` — capture or define the project's identity; the system encodes it as tokens.
+- `apply-color` — once the palette is set, use it expressively across a page (gradient headings, color on a grid, product-background washes, color per category, one tint across a section), always inside the palette you just built.
 - `ux-principles` — the quality floor every system must clear.
 - `impeccable`, `taste-skill`, `emil-design-skills` — reach into these for craft, taste direction, and motion detail while building. They raise quality; they don't decide the project's identity — the project does.
 
