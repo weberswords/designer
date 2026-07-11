@@ -19,7 +19,7 @@ Most projects already have identity, even if scattered. Your job is to find and 
    - **Color** — brand/primary, secondary, neutrals, semantic; exact values and preferred color space (prefer OKLCH for new ramps). Note where each is allowed.
    - **Type** — display and text families, weights licensed/loaded, the scale, pairing rules, fallbacks.
    - **Imagery** — photography vs. illustration, treatment (duotone, grain, flat), iconography style, do's and don'ts.
-   - **Voice** — three adjectives, casing, person (we/you), humor level, words to use and avoid.
+   - **Voice** — three adjectives, casing, person (we/you), humor level, words to use and avoid. Capture *who* is speaking, not just how: a real person or team behind the brand, and how much of them the copy is allowed to show. A brand with a human in it is harder to forget and harder to copy — expose the maker rather than laundering the personality into faceless corporate.
    - **Motion personality** — snappy vs. gentle, expressive vs. restrained, signature transitions.
 3. **Name the vibe in one line.** e.g. *"Warm editorial confidence — serif display, cream paper, ink, one hot accent; unhurried, human, never corporate."*
 4. **Write it to `brand-kit.md`.** Fill the template. Flag genuine gaps (e.g. no dark-mode brand color) rather than inventing — propose, mark as proposed, get confirmation.
