@@ -25,10 +25,10 @@ Fail any of these and the design is broken regardless of how it looks:
 1. **Hierarchy first.** One clear primary action per view. Size, weight, spacing, and color express importance. If everything shouts, nothing is heard.
 2. **Reduce cognitive load.** Recognition over recall. Sensible defaults. Progressive disclosure. Chunk complexity; don't dump it.
 3. **Consistency.** Same thing looks and behaves the same everywhere. Match the project's existing patterns (see `detect-design-system`) before inventing.
-4. **Design the states, not just the happy path.** Empty, loading, error, partial, too-much-data, offline, first-run. These are where real products live or die.
+4. **Design the states, not just the happy path.** Every screen owes four — loading, success, error, empty — plus partial, too-much-data, offline, first-run where they apply. Skeletons that mirror the layout for whole screens and content regions (prime the user before the data lands); a loader for smaller parts where a skeleton makes no sense. Match the feedback surface to the stakes: toasts for transient low-stakes status, never for important errors (put those inline or in a persistent banner); modals only for the rare thing the user must acknowledge or decide, since they take over the screen. These are where real products live or die.
 5. **Forms are where users struggle.** Label clearly, group logically, validate inline and kindly, preserve input on error, ask for the minimum.
 6. **Flow over screens.** Design the sequence, not isolated views. Minimize steps to the goal; keep the user oriented (where am I, what's next).
-7. **Content is the interface.** Clear, concrete UX copy in the project's voice beats clever. Sentence case reads faster. Say what a button does.
+7. **Content is the interface.** Clear, concrete UX copy in the project's voice beats clever. Sentence case reads faster. Every button says exactly what happens when pressed — the label is a promise, never "OK"/"Submit".
 8. **Accessibility is baseline, not a feature.** Semantic HTML, labels, landmarks, alt text, ARIA only when semantics fall short.
 9. **Performance is UX.** Perceived speed, skeleton/optimistic states, no layout shift, fast to interactive.
 10. **Respect the user's attention and trust.** No dark patterns, no manufactured urgency, no interruption without cause.

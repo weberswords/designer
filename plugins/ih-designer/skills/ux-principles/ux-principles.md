@@ -51,17 +51,19 @@ If any of these fail, the design is broken regardless of how good it looks.
 - Always show system state: idle, loading, success, error, empty, disabled.
 - Response times: < 100ms feels instant; < 1s keep attention with a subtle indicator; > 1s show progress; > 10s show progress + allow other work.
 - Optimistic UI where safe; skeletons over spinners for content; never a blank flash.
+- **Skeletons for layout, loaders for the rest.** When a whole screen or a sizable content region is loading, use a skeleton that mirrors the final layout — it primes the user for what's coming and kills layout shift when the data arrives. For smaller pieces where a skeleton would be noise or can't sensibly mimic the shape (a button mid-submit, an inline field, a small async widget), use a loader instead.
+- **Match the surface to the stakes.** A toast is transient and dismissible — right for low-stakes confirmations and passing status, wrong for anything the user must see or act on. Never surface an important error in a toast: it auto-dismisses, it stacks, it's easy to miss, and it offers nowhere to recover. Put important errors where the problem lives — inline next to the field or action, or in a persistent banner that stays until resolved. A modal takes over the center of the screen and blocks everything behind it; reserve it for the rare thing the user genuinely has to acknowledge or decide before continuing (destructive confirmation, a blocking error, a required choice). Every modal is an interruption — use them sparingly, and never for information a banner or inline message could carry.
 - Confirm consequential and destructive actions; make destructive actions undoable where possible (undo beats confirm).
 
 ## 5. States — design all of them
 
-Never ship only the happy path. For every meaningful surface, design:
+Never ship only the happy path. **Every screen owes the user four states — loading, success, error, and empty — designed, not defaulted.** Treat these as the floor for any surface that fetches or mutates data; the rest below are situational but just as real where they apply.
 
-- **Empty** — first-run and zero-data; guide the next action, don't just say "no items."
-- **Loading** — skeleton or progress that matches final layout; avoid layout shift.
-- **Partial** — some content, some pending; streamed/paginated data.
-- **Error** — specific cause, clear recovery, preserved context.
+- **Loading** — skeleton or progress that matches final layout; avoid layout shift. Skeleton for a whole screen or a content region (prime the user for the layout before the data lands); a loader for smaller parts where a skeleton makes no sense.
 - **Success** — confirmation proportional to the action.
+- **Error** — specific cause, clear recovery, preserved context.
+- **Empty** — first-run and zero-data; guide the next action, don't just say "no items."
+- **Partial** — some content, some pending; streamed/paginated data.
 - **Too much** — long lists, overflow, truncation, pagination/virtualization.
 - **Edge** — long strings, missing images, extreme numbers, i18n length, RTL.
 - **Offline / degraded** — where relevant.
@@ -88,7 +90,7 @@ Never ship only the happy path. For every meaningful surface, design:
 
 - Clear beats clever; concrete beats abstract. Say what happens.
 - Sentence case for UI text (reads faster, feels human); reserve Title Case for proper nouns/brands.
-- Buttons name their action ("Save changes", "Delete project"), not "OK"/"Submit".
+- Buttons say exactly what happens when pressed ("Save changes", "Delete project", "Send invite to 3 people"), never "OK"/"Submit"/"Continue". The label is a promise; the click should hold no surprises.
 - Error messages: what happened, why, what to do next — no blame, no jargon, no "oops".
 - Match the project's voice (see `brand-kit`); tone is part of the vibe.
 - Front-load the important word; cut filler; prefer active voice.
