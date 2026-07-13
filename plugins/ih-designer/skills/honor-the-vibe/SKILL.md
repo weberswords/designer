@@ -36,7 +36,7 @@ Based on the detect verdict:
 - **Partial system** → consolidate toward the strongest existing direction with **`build-design-system`**, then audit.
 - **No system** → **build the project its own**, with **`build-design-system`**: analyze the project, ask sharp questions, recommend directions, and construct tokens/type/color/space/conventions chosen *for this project* — integrated into the project's repo. Never hand it a generic or reused system.
 
-For brand identity at any maturity, use **`brand-kit`**. For the quality floor, **`ux-principles`** always applies.
+For brand identity at any maturity, use **`brand-kit`**. For the quality floor, **`ux-principles`** always applies. When a decided piece of work needs its interface explored before you commit to one design, run a **`design-jam`**: it takes the brief from `product-steward` and diverges into several concepts in the project's own system before converging on one.
 
 ### 4. Apply the precedence order
 When making visual decisions, resolve conflicts in this order — **higher wins**:
