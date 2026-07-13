@@ -30,7 +30,7 @@ Generate several genuinely different concepts for the interface, fast and rough.
 Narrow with a small, explicit rubric so the choice is a decision, not a preference:
 - **Honors the vibe.** It reads as this project, in this project's own system. This is the prime directive and it wins (`honor-the-vibe`).
 - **Serves the journey moment.** It delivers the persona's "so that" at the moment the story names, and it fits how they feel there (from the steward's `user-journeys`).
-- **Clears the UX and accessibility bar.** It meets `ux-principles`: hierarchy, cognitive load, keyboard reach, contrast, honest states. A beautiful concept that fails a keyboard is out.
+- **Clears the UX and accessibility bar.** It meets `ux-principles`: hierarchy, cognitive load, keyboard reach, contrast, truthful states. A beautiful concept that fails a keyboard is out.
 - **Is feasible in the real system.** It can be built from the project's existing tokens and components without a rebuild, or it names the small addition it needs.
 
 Score the concepts against the rubric, talk through the trade-offs, and pick one. A jam that ends with "they were all nice" has not finished; converging is the point.
