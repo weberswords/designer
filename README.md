@@ -16,12 +16,12 @@ This repo is a [Claude Code plugin marketplace](https://code.claude.com/docs/en/
 
 | Plugin | Source | What it gives you |
 |--------|--------|-------------------|
-| **`ih-designer`** | this repo | The foundational designer: detect a project's design system, honor its vibe, build the project its own system when it has none, audit an existing one, apply UX principles, and work from a brand kit. No house style — every project gets its own. |
+| **`designer`** | this repo | The foundational designer: detect a project's design system, honor its vibe, build the project its own system when it has none, audit an existing one, apply UX principles, and work from a brand kit. No house style — every project gets its own. |
 | **`impeccable`** | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | Broad frontend design fluency — one skill with ~23 commands (`polish`, `audit`, `critique`, `craft`, …) and anti-pattern detection. Ships a Node-based PostToolUse hook that lints UI edits. |
 | **`taste-skill`** | [leonxlnx/taste-skill](https://github.com/leonxlnx/taste-skill) | Anti-slop taste for landing pages, portfolios, and redesigns (brutalist, minimalist, soft, redesign, brandkit, image-to-code, …). |
 | **`emil-design-skills`** | [emilkowalski/skills](https://github.com/emilkowalski/skills) | Design-engineering taste from Vercel/Linear pedigree — motion, easing, animation review, and interface detail. |
 
-### The `ih-designer` foundational skills
+### The `designer` foundational skills
 
 - **`honor-the-vibe`** — the prime directive and entry point. Reads the project, sets the precedence order (the project's own identity always wins), routes to the right skill, and refuses homogenization. **Start here.**
 - **`detect-design-system`** — inspects a codebase for its existing tokens, theme, component library, type, color, space, and motion, and produces a structured Design Read with a maturity verdict.
@@ -68,7 +68,7 @@ In any project where you use Claude Code:
 Then install the whole designer, or pick pieces:
 
 ```
-/plugin install ih-designer@designer
+/plugin install designer@designer
 /plugin install impeccable@designer
 /plugin install taste-skill@designer
 /plugin install emil-design-skills@designer
@@ -86,12 +86,12 @@ Update the catalog later with:
 
 Once installed, just do design work — the skills activate by description. Or invoke explicitly:
 
-- `/ih-designer:honor-the-vibe` to kick off any UI task the right way.
-- `/ih-designer:detect-design-system` when you land in an unfamiliar codebase.
-- `/ih-designer:build-design-system` to help a project establish its own system.
-- `/ih-designer:design-audit` to check an existing system for consistency and quality.
-- `/ih-designer:ux-principles` to review an interface against the fundamentals.
-- `/ih-designer:brand-kit` to capture or apply a project's identity.
+- `/designer:honor-the-vibe` to kick off any UI task the right way.
+- `/designer:detect-design-system` when you land in an unfamiliar codebase.
+- `/designer:build-design-system` to help a project establish its own system.
+- `/designer:design-audit` to check an existing system for consistency and quality.
+- `/designer:ux-principles` to review an interface against the fundamentals.
+- `/designer:brand-kit` to capture or apply a project's identity.
 
 A typical run: add your project repo alongside `designer` in a Claude Code session, then let designer detect what's there, read the vibe, and either build the project its own system or audit the one it has — writing everything into your project's repo.
 
@@ -101,17 +101,17 @@ Skills from the other plugins are namespaced under their plugin (e.g. `/impeccab
 
 ## Making it yours
 
-`ih-designer` is authored to be edited — it encodes *how you work*, not a look to impose:
+`designer` is authored to be edited — it encodes *how you work*, not a look to impose:
 
 - Tune the method and questions in `build-design-system/SKILL.md` and the checks in `design-audit/SKILL.md` to match how you actually run a project.
 - Adjust the fundamentals in `ux-principles/ux-principles.md` and the anti-slop stance in `honor-the-vibe/SKILL.md`.
-- Add your own skills under `plugins/ih-designer/skills/<name>/SKILL.md` and they'll ship with the plugin.
+- Add your own skills under `plugins/designer/skills/<name>/SKILL.md` and they'll ship with the plugin.
 
 It deliberately ships **no default tokens or house palette** — designer builds each project its own.
 
 ## Credits & licenses
 
-`ih-designer` and this marketplace are MIT licensed (see [`LICENSE`](./LICENSE)). The referenced plugins remain under their own licenses and belong to their authors — see [`CREDITS.md`](./CREDITS.md):
+`designer` and this marketplace are MIT licensed (see [`LICENSE`](./LICENSE)). The referenced plugins remain under their own licenses and belong to their authors — see [`CREDITS.md`](./CREDITS.md):
 
 - **impeccable** — © Paul Bakaus, Apache-2.0
 - **taste-skill** — © Leon (leonxlnx), MIT

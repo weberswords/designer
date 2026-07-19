@@ -3,21 +3,21 @@
   "name": "designer",
   "description": "A portable UI/UX designer for Claude Code. Foundational craft skills plus a curated set of best-in-class design skills, tuned to honor each project's own vibe instead of homogenizing it.",
   "owner": {
-    "name": "The Intelligent Hoodlums",
-    "email": "webs@theintelligenthoodlums.com"
+    "name": "Studio W Labs",
+    "email": "webs@studiowlabs.com"
   },
   "metadata": {
     "pluginRoot": "./plugins"
   },
   "plugins": [
     {
-      "name": "ih-designer",
-      "source": "ih-designer",
+      "name": "designer",
+      "source": "designer",
       "description": "Foundational designer skills: read a project's existing design system and vibe and honor it, build the project its own system when it has none, audit an existing one for consistency, apply solid UX principles, and work from a brand kit. designer imposes no house style — every project gets its own, integrated into its repo.",
       "version": "0.1.0",
       "author": {
-        "name": "The Intelligent Hoodlums",
-        "email": "webs@theintelligenthoodlums.com"
+        "name": "Studio W Labs",
+        "email": "webs@studiowlabs.com"
       },
       "license": "MIT",
       "category": "design",

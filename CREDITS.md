@@ -24,4 +24,4 @@ If you build on this repo, keep this attribution intact.
 
 ---
 
-The `ih-designer` plugin and the marketplace configuration in this repository are original work © 2026 The Intelligent Hoodlums (weberswords), MIT licensed. See LICENSE.
+The `designer` plugin and the marketplace configuration in this repository are original work © 2026 Studio W Labs (weberswords), MIT licensed. See LICENSE.
