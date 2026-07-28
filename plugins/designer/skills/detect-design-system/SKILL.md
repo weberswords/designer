@@ -53,14 +53,14 @@ Summarize findings as a compact, structured read — not prose. Example shape:
 DESIGN READ — <project>
 System:      Tailwind v4 + shadcn/ui (Radix primitives), tokens in app/globals.css @theme
 Maturity:    Established — cohesive tokens, ~20 UI components, consistent usage
-Type:        Geist Sans (text) + Geist Mono (code); scale 14/16/20/24/32/48, tight tracking on display
-Color:       OKLCH ramp; brand ~oklch(0.55 0.2 265), neutral zinc ramp; semantic set present
+Type:        Fraunces (display, optical sizing) + Inter (text); scale 15/17/21/28/36/56, generous leading
+Color:       Warm HSL palette; brand terracotta ~hsl(14 72% 52%), sand neutrals, sage + clay accents
 Dark mode:   Yes — .dark class strategy, full token parity
 Space:       4px base, generally airy; section rhythm 96–128px
-Shape:       Radius 8px default, 12px cards; borders over shadows, shadows very soft
+Shape:       Radius 10px default, 16px cards; soft shadows over hard borders
 Motion:      Restrained — 150–200ms ease-out enters, framer-motion for layout only
-Voice:       Sentence case, terse, confident, no emoji
-Vibe:        Linear-adjacent: quiet, precise, developer-facing, high-craft minimal
+Voice:       Sentence case, warm, plain-spoken, no emoji
+Vibe:        Warm editorial: inviting, tactile, human, high-craft without the chill
 GAPS:        No empty-state or error-state patterns; toast styling ad hoc
 ```
 

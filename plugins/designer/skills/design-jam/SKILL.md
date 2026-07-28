@@ -9,6 +9,8 @@ A design jam is a short, structured session that puts several interface ideas on
 
 A jam works on **decided** work. It does not choose what to build, set scope, or set a date; those are the product steward's decisions (`product-steward`). The jam takes a value increment, a BDD story, or a journey moment that the steward has already shaped, and explores how it should look and behave. Everything the jam produces lands in the **target project's repo**, in the project's own design system, not in designer's.
 
+> **On `product-steward` (optional dependency).** `product-steward` is a separate sibling plugin, installable from `studiowlabs/product-steward`, and it is **not** part of designer's marketplace. The hand-off described here works only when the user has also installed it. When it is present, the jam takes its brief from the steward's decided work. When it is absent, get the same brief straight from the person you are jamming with, namely the persona, the journey moment, and the "so that." The jam needs the brief, not the specific tool that produced it.
+
 ## Before the jam: get the brief
 
 A jam without a brief drifts into decoration. Anchor it first:
@@ -43,7 +45,7 @@ Write up the outcome so the build can start and the thinking is not lost:
 - Land this in the target project's repo (a short design note in its `docs/`, or directly as low-fi component sketches in its stack), ready to be built into the real thing.
 
 ## Solo or with others
-webs often jams alone, and the structure holds either way. Solo, the divergence is you deliberately generating options you would not have committed to, and the convergence is the rubric keeping you from just building the first idea. With others, the same phases run as a facilitated session: diverge silently first so the loudest voice does not anchor everyone, then score together. The rubric is what keeps a group jam from becoming a popularity contest.
+You often jam alone, and the structure holds either way. Solo, the divergence is you deliberately generating options you would not have committed to, and the convergence is the rubric keeping you from just building the first idea. With others, the same phases run as a facilitated session: diverge silently first so the loudest voice does not anchor everyone, then score together. The rubric is what keeps a group jam from becoming a popularity contest.
 
 ## The boundary, held both ways
 - The jam does **not** reopen what the steward decided. If the jam surfaces that the work itself is wrong (the story serves the wrong moment, the increment is too big), that is feedback *back to* `product-steward`, not a decision the jam makes on its own.
