@@ -45,7 +45,7 @@ Write up the outcome so the build can start and the thinking is not lost:
 - Land this in the target project's repo (a short design note in its `docs/`, or directly as low-fi component sketches in its stack), ready to be built into the real thing.
 
 ## Solo or with others
-webs often jams alone, and the structure holds either way. Solo, the divergence is you deliberately generating options you would not have committed to, and the convergence is the rubric keeping you from just building the first idea. With others, the same phases run as a facilitated session: diverge silently first so the loudest voice does not anchor everyone, then score together. The rubric is what keeps a group jam from becoming a popularity contest.
+You often jam alone, and the structure holds either way. Solo, the divergence is you deliberately generating options you would not have committed to, and the convergence is the rubric keeping you from just building the first idea. With others, the same phases run as a facilitated session: diverge silently first so the loudest voice does not anchor everyone, then score together. The rubric is what keeps a group jam from becoming a popularity contest.
 
 ## The boundary, held both ways
 - The jam does **not** reopen what the steward decided. If the jam surfaces that the work itself is wrong (the story serves the wrong moment, the increment is too big), that is feedback *back to* `product-steward`, not a decision the jam makes on its own.
