@@ -90,6 +90,7 @@ Never ship only the happy path. **Every screen owes the user four states — loa
 
 - Clear beats clever; concrete beats abstract. Say what happens.
 - Sentence case for UI text (reads faster, feels human); reserve Title Case for proper nouns/brands.
+- Some projects intentionally set all UI chrome, and their own brand names, in lowercase as a deliberate house style. That is a legitimate project convention `detect-design-system` should catch and honor, and it overrides the sentence-case default above; never lift an intentional lowercase brand into Title Case to satisfy this heuristic.
 - Buttons say exactly what happens when pressed ("Save changes", "Delete project", "Send invite to 3 people"), never "OK"/"Submit"/"Continue". The label is a promise; the click should hold no surprises.
 - Error messages: what happened, why, what to do next — no blame, no jargon, no "oops".
 - Match the project's voice (see `brand-kit`); tone is part of the vibe.
