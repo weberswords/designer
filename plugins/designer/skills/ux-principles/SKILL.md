@@ -33,6 +33,12 @@ Fail any of these and the design is broken regardless of how it looks:
 9. **Performance is UX.** Perceived speed, skeleton/optimistic states, no layout shift, fast to interactive.
 10. **Respect the user's attention and trust.** No dark patterns, no manufactured urgency, no interruption without cause.
 
+## Named patterns
+
+Reusable interaction patterns proven in real builds live in `ux-principles.md` §12. Reach for one when its situation shows up:
+- **Setting on the object, not a banner** — put an item's property (owner, folder, school) inline on that item, always reachable, instead of a separate banner/modal that lists everything at once.
+- **Faded first-run nudge** — teach a new control with a highlighted prompt at the point of decision, then fade it for good once the user acts or dismisses (content-free per-user guidance state), so the newcomer is taught and the veteran isn't nagged.
+
 ## Using this in a review
 
 Go non-negotiables first (these are pass/fail), then walk the working principles against the actual flows and states. Report concrete failures with the fix, not vague notes. Tie every call back to the user's goal and the project's vibe — a fix that damages the project's identity to satisfy a heuristic is the wrong fix; find one that does both.

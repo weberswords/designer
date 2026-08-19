@@ -120,6 +120,28 @@ Never ship only the happy path. **Every screen owes the user four states — loa
 - Respect attention: interrupt only with cause; make notifications controllable.
 - Be honest about state, cost, and consequence before the user commits.
 
+## 12. Reusable interaction patterns
+
+Named patterns proven in real builds. Reach for one when its situation shows up; each names the anti-pattern it replaces.
+
+### Setting on the object, not a banner
+
+When a property belongs to a specific item (which school a class files under, which folder a file lives in, who owns a task), put the control **on that item**, inline, where the user already looks at it. A separate banner or modal that lists every item and asks her to set them all is the anti-pattern: it competes with the primary content, it's easy to dismiss and never see again, and it divorces the choice from the thing being chosen.
+
+- The affordance lives on the row/card and is **always reachable** (the visible door), so there's no one-time window to miss.
+- It shows the **current value** as a quiet, readable line ("Belongs to: Personal class"), editable in place.
+- A **bulk "set all"** shortcut can still exist, but as a convenience folded into the inline flow, not as the primary surface.
+- Backfill for existing items is transparent: an unset value resolves to a sensible default and reads as that default, so nothing looks broken while she hasn't chosen yet. The migration is the affordance being present, not a modal that interrupts.
+
+### Faded first-run nudge
+
+First-run guidance that teaches a new control, then gets out of the way. Pairs naturally with the pattern above and with any "learn the move once" teaching moment.
+
+- The first time(s), the control carries a **highlighted prompt** that teaches the concept in plain language at the point of the decision ("Does this class belong to {school}? Change it here.").
+- It **fades for good** once the user acts on it or explicitly dismisses it ("got it"), recorded in a small, content-free per-user guidance state (a teachable-moment key and its state, never the user's data).
+- After it fades, the plain, quiet, editable control remains — help is still reachable, never re-taught.
+- This serves opposite users at once: the newcomer gets taught in the doing; the veteran isn't nagged with what she already knows. Prefer it over a standing banner that shouts at everyone forever.
+
 ---
 
 ## Review rubric (quick pass)
