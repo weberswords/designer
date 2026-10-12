@@ -28,7 +28,7 @@ This repo is a [Claude Code plugin marketplace](https://code.claude.com/docs/en/
 - **`build-design-system`** — when a project has no system (or fragments), facilitates finding its aesthetic (asks questions, recommends directions) and builds its own tokens/type/color/space/conventions **into the target repo**.
 - **`design-audit`** — when a system already exists, checks quality and consistency: consistent corner rounding, on-scale values, real hierarchy, no boxes-in-boxes.
 - **`ux-principles`** — style-agnostic usability, accessibility, and interaction fundamentals (+ a full `ux-principles.md` checklist).
-- **`brand-kit`** — capture, define, and apply a project's brand identity (+ a `brand-kit-template.md`).
+- **`brand-kit`** — capture, define, and apply a project's brand identity (+ a `brand-kit-template.md`). It can also interview you one question at a time and write the kit from your answers.
 - **`copy-that-moves`** — punch up flat, sterile, tech-bro, or "AI-sounding" copy into writing with a pulse, using Octalysis core drives, Paul Arden's nerve, and the surprise of classic advertising — all inside the project's own brand voice, never a house style.
 - **`design-jam`** — facilitate a fast, structured ideation session that generates several interface concepts for a piece of work the product steward has already decided, then converges on one against a rubric grounded in the project's own system. Diverges before it commits, so the interface is a chosen direction, not the first idea. Pairs with `product-steward`, which supplies the brief.
 
